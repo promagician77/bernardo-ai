@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Bernardo Photography Study</title>
+<style>:root{color-scheme:light dark}*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;font:15px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}img,svg,video{max-width:100%;height:auto}button,input,select,textarea{font:inherit;color:inherit}table{border-collapse:collapse}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+ --paper:#f3efe9;--card:#fffdfa;--ink:#1c1815;--ink2:#564e47;--ink3:#8a7f75;
+ --rule:#e0d7cd;--rule2:#c7bbae;
+ --bern:#dbcec5;--bern2:#e6d8cf;
+ --acc:#8a5a3c;--accbg:#f2e8e1;
+ --ok:#3f6b4a;--okbg:#e8f0e8;--warn:#8a6210;--warnbg:#f8efd9;
+ --bad:#9e3f31;--badbg:#f8e7e3;
+ --s-bg:#f6f3f0;--s-ink:#1c1815;--s-mut:#857a70;--s-sub:#605850;
+ --s-boxf:#ffffff;--s-boxs:#ded5cd;
+ --s-realf:#e7f0e9;--s-reals:#2b6b45;--s-genf:#eae7f4;--s-gens:#5b4a9e;
+ --s-handf:#fdf0dc;--s-hands:#a87a1e;--s-gatef:#e8eefa;--s-gates:#2d62ad;
+ --s-nof:#fae8e5;--s-nos:#a73a2f;--s-ln:#9d938a;
+ --s-frame:#dbcec5;--s-frame2:#e6d8cf;--s-subj:#2c2622;--s-subjo:.85;
+ --disp:"Instrument Serif",Georgia,serif;
+ --body:"Inter",ui-sans-serif,-apple-system,sans-serif;
+ --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+ --paper:#141210;--card:#1c1917;--ink:#ece7e2;--ink2:#b0a69d;--ink3:#847a71;
+ --rule:#2e2925;--rule2:#413a34;
+ --acc:#c98c66;--accbg:#2a1d15;
+ --ok:#79b989;--okbg:#16261a;--warn:#d5a547;--warnbg:#282113;
+ --bad:#dd8070;--badbg:#2a1614;
+ --s-bg:#13110f;--s-ink:#ece7e2;--s-mut:#9d9289;--s-sub:#9d9289;
+ --s-boxf:#1c1917;--s-boxs:#332e29;
+ --s-realf:#132419;--s-reals:#4e9169;--s-genf:#1c1733;--s-gens:#8a76d0;
+ --s-handf:#2a2113;--s-hands:#c09a40;--s-gatef:#13203a;--s-gates:#5a8fd6;
+ --s-nof:#2a1614;--s-nos:#c25a4e;--s-ln:#5d564f;
+ --s-subj:#e8e2dc;--s-subjo:.8;
+}}
+:root[data-theme="dark"]{
+ --paper:#141210;--card:#1c1917;--ink:#ece7e2;--ink2:#b0a69d;--ink3:#847a71;
+ --rule:#2e2925;--rule2:#413a34;
+ --acc:#c98c66;--accbg:#2a1d15;
+ --ok:#79b989;--okbg:#16261a;--warn:#d5a547;--warnbg:#282113;
+ --bad:#dd8070;--badbg:#2a1614;
+ --s-bg:#13110f;--s-ink:#ece7e2;--s-mut:#9d9289;--s-sub:#9d9289;
+ --s-boxf:#1c1917;--s-boxs:#332e29;
+ --s-realf:#132419;--s-reals:#4e9169;--s-genf:#1c1733;--s-gens:#8a76d0;
+ --s-handf:#2a2113;--s-hands:#c09a40;--s-gatef:#13203a;--s-gates:#5a8fd6;
+ --s-nof:#2a1614;--s-nos:#c25a4e;--s-ln:#5d564f;
+ --s-subj:#e8e2dc;--s-subjo:.8;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 var(--body);-webkit-text-size-adjust:100%}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 60px}
+header{border-bottom:1px solid var(--rule);background:var(--card)}
+.hin{max-width:1080px;margin:0 auto;padding:12px 20px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.brand{font:400 20px var(--disp);letter-spacing:.01em}
+.meta{font:500 11px var(--mono);color:var(--ink3);letter-spacing:.04em;text-transform:uppercase}
+.spacer{flex:1}
+.tgl{background:none;border:1px solid var(--rule2);border-radius:999px;padding:5px 13px;font:500 12px var(--body);cursor:pointer;color:var(--ink2)}
+.banner{background:var(--warnbg);border:1px solid color-mix(in srgb,var(--warn) 38%,transparent);border-radius:8px;padding:11px 14px;margin:18px 0 0;font-size:13px;color:var(--ink2)}
+.banner b{color:var(--ink)}
+nav{display:flex;gap:4px;margin:20px 0 0;border-bottom:1px solid var(--rule);overflow-x:auto}
+nav button{background:none;border:0;border-bottom:2px solid transparent;padding:10px 15px;cursor:pointer;color:var(--ink3);font:600 13.5px var(--body);white-space:nowrap}
+nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--acc)}
+h2{font:400 26px/1.25 var(--disp);margin:26px 0 6px}
+h3{font:600 11px var(--body);margin:26px 0 9px;color:var(--ink3);text-transform:uppercase;letter-spacing:.1em}
+.note{color:var(--ink2);font-size:13.5px;margin:0 0 14px;max-width:72ch}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:20px}
+.grid{display:grid;gap:16px}
+@media(min-width:820px){.g2{grid-template-columns:1fr 1fr}}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font:400 13px/1.5 var(--body)}
+th{text-align:left;font:600 10px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);padding:0 10px 9px;border-bottom:1px solid var(--rule2)}
+td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.n{text-align:right;font-family:var(--mono);font-size:12.5px}
+tr:last-child td{border-bottom:0}
+tr.hl td{background:var(--accbg)}
+.stats{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:680px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:12px}
+.big{font:400 28px/1 var(--disp)}
+.bigl{font:600 10px/1.3 var(--body);text-transform:uppercase;letter-spacing:.07em;color:var(--ink3);margin-top:7px}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font:600 10px var(--body)}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-warn{background:var(--warnbg);color:var(--warn)}
+.p-bad{background:var(--badbg);color:var(--bad)}
+.sw{display:flex;gap:0;border-radius:8px;overflow:hidden;border:1px solid var(--rule2);margin:10px 0}
+.sw i{display:block;height:54px;flex:1;position:relative}
+.sw i b{position:absolute;bottom:4px;left:0;right:0;text-align:center;font:500 9.5px var(--mono);color:#1c1815}
+.ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}
+input[type=color]{width:54px;height:36px;border:1px solid var(--rule2);border-radius:6px;background:none;cursor:pointer;padding:2px}
+input[type=text]{font:500 13px var(--mono);padding:8px 10px;border:1px solid var(--rule2);border-radius:6px;background:var(--card);color:var(--ink);width:120px}
+.verdict{border-radius:8px;padding:12px 14px;font-size:13px;margin-top:12px;line-height:1.6}
+.v-ok{background:var(--okbg);border:1px solid color-mix(in srgb,var(--ok) 38%,transparent)}
+.v-bad{background:var(--badbg);border:1px solid color-mix(in srgb,var(--bad) 38%,transparent)}
+pre{font:500 12px/1.65 var(--mono);background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:13px 15px;overflow:auto;margin:10px 0;white-space:pre}
+code{font:500 12.5px var(--mono);background:var(--paper);border:1px solid var(--rule);border-radius:4px;padding:1px 5px}
+ul{margin:10px 0;padding-left:20px}li{margin:6px 0;color:var(--ink2);font-size:13.5px}li b{color:var(--ink)}
+blockquote{margin:12px 0;padding:10px 16px;border-left:2px solid var(--acc);background:var(--paper);font-size:13.5px;border-radius:0 6px 6px 0}
+.svgfig{border:1px solid var(--rule);border-radius:10px;overflow:hidden;margin:10px 0}
+.svgfig .bg{fill:var(--s-bg)}
+.svgfig text{font-family:var(--body);fill:var(--s-ink)}
+.svgfig .mono{font-family:var(--mono)}
+.svgfig .h1{font-size:18px;font-weight:700}
+.svgfig .h2{font-size:12px;font-weight:700}
+.svgfig .lbl{font-size:12.5px;font-weight:600}
+.svgfig .col{font-size:10.5px;font-weight:700;letter-spacing:.09em;fill:var(--s-mut)}
+.svgfig .sub{font-size:10.5px;fill:var(--s-sub)}
+.svgfig .box{fill:var(--s-boxf);stroke:var(--s-boxs);stroke-width:1.2}
+.svgfig .real{fill:var(--s-realf);stroke:var(--s-reals);stroke-width:1.6}
+.svgfig .gen{fill:var(--s-genf);stroke:var(--s-gens);stroke-width:1.5}
+.svgfig .hand{fill:var(--s-handf);stroke:var(--s-hands);stroke-width:1.5}
+.svgfig .gate{fill:var(--s-gatef);stroke:var(--s-gates);stroke-width:1.5}
+.svgfig .no{fill:var(--s-nof);stroke:var(--s-nos);stroke-width:1.4}
+.svgfig .ln{stroke:var(--s-ln);stroke-width:1.5;fill:none;marker-end:url(#pipearrow)}
+.svgfig .frame{fill:var(--s-frame);stroke:var(--s-ink);stroke-width:1.6}
+.svgfig .frame2{fill:var(--s-frame2);stroke:var(--s-ink);stroke-width:1.6}
+.svgfig .subj{fill:var(--s-subj);opacity:var(--s-subjo)}
+.svgfig .dim{stroke:var(--s-nos);stroke-width:1.2;stroke-dasharray:4 3;fill:none}
+.svgfig .ctr{stroke:var(--s-gates);stroke-width:1.2;stroke-dasharray:3 3;fill:none}
+#pipearrow path{fill:var(--s-ln)}
+footer{margin-top:34px;padding-top:16px;border-top:1px solid var(--rule);color:var(--ink3);font-size:12px}
+</style>
+</head>
+<body>
+<header><div class="hin">
+ <span class="brand">Bernardo</span>
+ <span class="meta">photography study · 4 Nov 2026</span>
+ <span class="spacer"></span><button class="tgl" id="theme">dark</button>
+</div></header>
+
+<div class="wrap">
+<div class="banner"><b>Nothing here was generated.</b> This is a study of your public
+catalogue: 300 products, 1,685 images, measured on 4 November 2026. Every number is
+reproducible with the checker in these notes. The one thing I have not done is make a
+picture, because that is the test project.</div>
+
+<nav role="tablist">
+ <button role="tab" id="t1" aria-selected="true"  aria-controls="p1">The study</button>
+ <button role="tab" id="t2" aria-selected="false" aria-controls="p2">The quilting</button>
+ <button role="tab" id="t3" aria-selected="false" aria-controls="p3">The pipeline</button>
+ <button role="tab" id="t4" aria-selected="false" aria-controls="p4">The test</button>
+</nav>
+
+<!-- ============ STUDY ============ -->
+<section id="p1" role="tabpanel" aria-labelledby="t1">
+<h2>What your photography actually specifies</h2>
+<p class="note">You asked for someone who would study it. These are the numbers that
+fell out, and two of them are things worth deciding before any image is made.</p>
+
+<div class="stats">
+ <div class="stat"><div class="big">2400&times;3600</div><div class="bigl">house master size</div></div>
+ <div class="stat"><div class="big">70.8%</div><div class="bigl">of the library at 2:3</div></div>
+ <div class="stat"><div class="big">6</div><div class="bigl">median images per product</div></div>
+ <div class="stat"><div class="big">21–23</div><div class="bigl">background warmth, R−B</div></div>
+</div>
+
+<h3>Your library runs two aspect ratios</h3>
+<div class="card" style="padding:0"><div class="scroll"><table>
+<thead><tr><th>Spec</th><th class="n">Share</th><th class="n">Ratio</th><th>Reading</th></tr></thead>
+<tbody>
+<tr class="hl"><td>2400 &times; 3600</td><td class="n">70.8%</td><td class="n">0.6667</td><td>the house standard</td></tr>
+<tr><td>972&times;1248, 1296&times;1664, 3894&times;5000</td><td class="n">27.2%</td><td class="n">0.7788</td><td>a visibly different shape</td></tr>
+<tr><td>everything else</td><td class="n">2.0%</td><td class="n">various</td><td>strays</td></tr>
+</tbody></table></div></div>
+<p class="note" style="margin-top:12px">Your brief says AI images must "live seamlessly
+alongside our traditionally photographed imagery." <b>Alongside which?</b> I would build
+to 2400&times;3600, but a quarter of the library is a different shape, and that is free to
+decide now and expensive to decide later.</p>
+
+<h3>Images per product: your own norm is six</h3>
+<div class="card" style="padding:0"><div class="scroll"><table>
+<thead><tr><th>Images</th><th class="n">3</th><th class="n">4</th><th class="n">5</th><th class="n">6</th><th class="n">7</th><th class="n">8+</th></tr></thead>
+<tbody><tr><td>Products</td><td class="n">10</td><td class="n">61</td><td class="n">61</td><td class="n"><b>111</b></td><td class="n">29</td><td class="n">28</td></tr></tbody>
+</table></div></div>
+<p class="note" style="margin-top:12px">Median <b>6</b>, mean 5.6, range 3–11, and 76% of
+products carry five or more. Your question 8 asks about turnaround for "3–5 final
+images". <b>I have quoted for six</b>, because quoting for four would make the number
+look better and the schedule wrong.</p>
+
+<h3>The background is a gradient, and it drifts</h3>
+<div class="sw">
+ <i style="background:#c3b5ac"><b>#c3b5ac</b></i><i style="background:#d1c4bb"><b>#d1c4bb</b></i>
+ <i style="background:#dbcec5"><b>#dbcec5</b></i><i style="background:#e1d3ca"><b>#e1d3ca</b></i>
+ <i style="background:#e6d8cf"><b>#e6d8cf</b></i><i style="background:#ede0d7"><b>#ede0d7</b></i>
+</div>
+<p class="note">Corners differ by about ten points <i>within</i> one frame, and the
+Cheetah shoot is measurably lighter than the Irving shoot. So matching your background
+is matching a range, not a colour. What is constant across every sample and every
+shoot is the <b>warmth</b>: red minus blue, 21 to 23.</p>
+
+<div class="card">
+ <h3 style="margin-top:0">Try a background against the rule</h3>
+ <div class="ctl">
+  <input type="color" id="pick" value="#dbcec5">
+  <input type="text" id="hexin" value="#dbcec5">
+  <span class="meta" id="rb"></span>
+ </div>
+ <div class="verdict" id="bgv"></div>
+ <p class="note" style="margin:12px 0 0">My first version of this check used overall
+ colour distance and was <b>wrong</b>: a neutral grey scored closer to your mean than your
+ own darkest corner did. Measuring against real samples corrected the tool. That is the
+ difference between a spec and a preference.</p>
+</div>
+
+<h3>She is not centred</h3>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 520" role="img" aria-label="Measured framing and shot grammar" class="svgfig fig-grm" style="width:100%;height:auto;display:block">
+<rect class="bg" width="980" height="520"/>
+<text class="h1" x="28" y="34">Framing, measured not guessed</text>
+<text class="sub" x="28" y="54">Three frames, two products. The percentages are indicative; the direction is certain.</text>
+
+<text class="col" x="28" y="88">ONE FRAME, 2400 x 3600</text>
+<rect class="frame" x="28" y="100" width="200" height="300" rx="2"/>
+<rect class="subj" x="75" y="104" width="96" height="292" rx="36"/>
+<line class="ctr" x1="128" y1="96" x2="128" y2="408"/>
+<line class="dim" x1="28" y1="104" x2="228" y2="104"/>
+<line class="dim" x1="28" y1="396" x2="228" y2="396"/>
+<text class="sub mono" x="236" y="108">headroom ~1%</text>
+<text class="sub mono" x="236" y="400">footroom ~1%</text>
+<text class="sub mono" x="236" y="244">subject fills</text>
+<text class="sub mono" x="236" y="260">97-99% of</text>
+<text class="sub mono" x="236" y="276">frame height</text>
+<line class="dim" x1="123" y1="420" x2="128" y2="420"/>
+<text class="sub mono" x="60" y="436">centre of subject</text>
+<text class="sub mono" x="60" y="450">sits 3-13% LEFT</text>
+<text class="sub mono" x="60" y="464">of frame centre</text>
+
+<text class="col" x="330" y="88">THE BACKGROUND IS NOT FLAT</text>
+<rect class="frame" x="330" y="100" width="150" height="150" rx="2"/>
+<text class="sub mono" x="336" y="116">#dbcec5</text>
+<text class="sub mono" x="420" y="116">#d1c4bb</text>
+<text class="sub mono" x="336" y="244">#ddcfc6</text>
+<text class="sub mono" x="420" y="244">#d9cbc2</text>
+<text class="sub" x="330" y="268">Irving, black</text>
+
+<rect class="frame2" x="500" y="100" width="150" height="150" rx="2"/>
+<text class="sub mono" x="506" y="116">#e6d8cf</text>
+<text class="sub mono" x="590" y="116">#e6d9d0</text>
+<text class="sub mono" x="506" y="244">#e5d7cc</text>
+<text class="sub mono" x="590" y="244">#ede0d7</text>
+<text class="sub" x="500" y="268">Cheetah, printed</text>
+
+<text class="sub" x="330" y="294">Corners differ by ~10 points WITHIN a frame.</text>
+<text class="sub" x="330" y="311">The Cheetah shoot is measurably lighter than Irving.</text>
+<text class="sub" x="330" y="328">So "match the background" is a range, not a colour.</text>
+<text class="h2" x="330" y="352">What IS constant: warmth.</text>
+<text class="sub mono" x="330" y="371">R minus B = 21 to 23 in every sample, every shoot.</text>
+<text class="sub mono" x="330" y="388">A neutral grey is 0. That is the real signature.</text>
+
+<rect class="box" x="700" y="100" width="252" height="288" rx="8"/>
+<text class="h2" x="716" y="122">Shot grammar per product</text>
+<text class="sub mono" x="716" y="146">1   full length, front</text>
+<text class="sub mono" x="716" y="164">2   full length, slight turn</text>
+<text class="sub mono" x="716" y="182">3   side, often tighter crop</text>
+<text class="sub mono" x="716" y="200">4   back</text>
+<text class="sub mono" x="716" y="218">5-6 detail or movement</text>
+<text class="sub" x="716" y="246">Median 6 per product.</text>
+<text class="sub" x="716" y="263">Range 3 to 11. 76% have 5+.</text>
+<text class="sub" x="716" y="288">Frame numbers run sequentially</text>
+<text class="sub" x="716" y="305">within a product (19730, 19740,</text>
+<text class="sub" x="716" y="322">19766...), so each SKU is one</text>
+<text class="sub" x="716" y="339">session: one model, one light,</text>
+<text class="sub" x="716" y="356">one background state.</text>
+<text class="sub" x="716" y="378">A generated set needs the same.</text>
+
+<rect class="box" x="28" y="412" width="652" height="76" rx="8"/>
+<text class="h2" x="46" y="434">The one your brief did not mention, and it changes the first question</text>
+<text class="sub" x="46" y="456">70.8% of your 1,685 catalogue images are 2400 x 3600 at ratio 0.6667. But 27.2% sit at ratio 0.7788 (972x1248, 1296x1664, 3894x5000).</text>
+<text class="sub" x="46" y="474">"Seamlessly alongside our traditionally photographed imagery" needs an answer to: alongside which of the two? Free to decide now.</text>
+</svg>
+<div class="card" style="padding:0"><div class="scroll"><table>
+<thead><tr><th>Frame</th><th class="n">Subject height</th><th class="n">Headroom</th><th class="n">Horizontal</th></tr></thead>
+<tbody>
+<tr><td>Irving, front</td><td class="n">97%</td><td class="n">1.5%</td><td class="n">4.5% left</td></tr>
+<tr><td>Irving, side</td><td class="n">99%</td><td class="n">0.8%</td><td class="n">12.8% left</td></tr>
+<tr><td>Cheetah, front</td><td class="n">98%</td><td class="n">1.7%</td><td class="n">12.1% left</td></tr>
+</tbody></table></div></div>
+<p class="note" style="margin-top:12px">She fills the frame almost edge to edge with about
+one percent of headroom, and sits <b>left of centre in every frame</b>, negative space to
+her right. That is art direction, it is consistent, and it is exactly what a generated
+image gets wrong by defaulting to centred.
+<i>Method: threshold against the corner background, so contact shadow counts as subject.
+Percentages indicative, direction certain.</i></p>
+</section>
+
+<!-- ============ QUILTING ============ -->
+<section id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+<h2>The quilting is a geometry, not a texture</h2>
+<p class="note">I looked at the Irving Quilted Puffer Coat in black, front and side.
+What is on that coat is a construction, not a surface.</p>
+
+<div class="card" style="padding:0"><div class="scroll"><table>
+<thead><tr><th>Detail</th><th>Why it is hard</th></tr></thead>
+<tbody>
+<tr><td><b>Chevrons change direction at the centre front</b></td><td>the single most recognisable thing about the coat</td></tr>
+<tr><td>They continue around the back, pointing down</td><td>a generated back view invents its own</td></tr>
+<tr><td>Channel width narrows at the shoulder</td><td>proportion, and it reads at thumbnail size</td></tr>
+<tr><td>Two-way zip with a specific pull</td><td>a customer zooms to exactly this</td></tr>
+<tr><td>Stand collar with chin guard</td><td>silhouette at the neck</td></tr>
+<tr><td>Side zip vent at the hem</td><td>the first thing to disappear in a generated version</td></tr>
+</tbody></table></div></div>
+
+<div class="verdict v-bad" style="margin-top:14px"><b>And it has to be the same coat six
+times.</b> Not a plausible black quilted coat six times. The same chevron count, the same
+direction change, the same channel widths, front, side and back. <b>That is what image
+generation cannot promise</b>, because it samples a distribution rather than reproducing
+an object. There is no prompt, seed or reference weight that turns "plausible" into
+"identical".</div>
+
+<p class="note" style="margin-top:14px">You already know this. It is why you wrote:</p>
+<blockquote>"AI-generated imagery must preserve these details and accurately represent
+the actual product. We do not want AI 'reinterpreting' the garment."</blockquote>
+<p class="note"><b>The only reliable answer is to never let the model draw the garment.</b>
+Anyone answering your question 5 with prompt technique, LoRAs or reference weighting is
+describing how to make reinterpretation <i>less likely</i>. That is a different promise
+from the one you asked for.</p>
+</section>
+
+<!-- ============ PIPELINE ============ -->
+<section id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+<h2>So the garment is preserved, not generated</h2>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 540" role="img" aria-label="Garment-preserving pipeline" class="svgfig fig-pipe" style="width:100%;height:auto;display:block">
+<defs><marker id="pipearrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+<path d="M0 0 L10 5 L0 10 z" fill="#8f857c"/></marker></defs>
+<rect class="bg" width="980" height="540"/>
+<text class="h1" x="28" y="34">The garment is never generated</text>
+<text class="sub" x="28" y="54">Green is your real pixels. Purple is generated. Amber is done by hand. Blue is the gate nothing ships without.</text>
+
+<text class="col" x="28" y="92">YOUR PHOTOGRAPHY</text>
+<rect class="real" x="28" y="104" width="214" height="104" rx="8"/>
+<text class="lbl" x="44" y="126">Product masters</text>
+<text class="sub mono" x="44" y="145">2400 x 3600, six per SKU</text>
+<text class="sub" x="44" y="165">masked at the quilt channel edges,</text>
+<text class="sub" x="44" y="180">collar roll, zip teeth, hem vent</text>
+<text class="sub" x="44" y="199">hardware isolated for relighting</text>
+
+<rect class="real" x="28" y="224" width="214" height="86" rx="8"/>
+<text class="lbl" x="44" y="246">GARMENT PLATE</text>
+<text class="sub" x="44" y="265">real quilting, real zip pull,</text>
+<text class="sub" x="44" y="280">real channel widths, real hardware</text>
+<text class="sub mono" x="44" y="300">nothing here is synthesised</text>
+
+<text class="col" x="286" y="92">GENERATED, WITH NO GARMENT IN IT</text>
+<rect class="gen" x="286" y="104" width="232" height="104" rx="8"/>
+<text class="lbl" x="302" y="126">Model + scene plate</text>
+<text class="sub" x="302" y="145">body, hands, hair, background</text>
+<text class="sub" x="302" y="162">conditioned on a LOCKED reference</text>
+<text class="sub" x="302" y="177">set, never a text description</text>
+<text class="sub mono" x="302" y="198">seed + version recorded per frame</text>
+
+<rect class="gen" x="286" y="224" width="232" height="86" rx="8"/>
+<text class="lbl" x="302" y="246">Background to the measured spec</text>
+<text class="sub mono" x="302" y="266">warmth R-B 21 to 23</text>
+<text class="sub mono" x="302" y="283">falloff ~10 pts, NOT flat</text>
+<text class="sub" x="302" y="301">a flat field reads as composited</text>
+
+<path class="ln" d="M242 262 L278 262"/>
+<path class="ln" d="M518 262 L554 262"/>
+<path class="ln" d="M402 208 L402 222"/>
+
+<text class="col" x="562" y="92">ASSEMBLY</text>
+<rect class="box" x="562" y="104" width="196" height="104" rx="8"/>
+<text class="lbl" x="578" y="126">Composite and fit</text>
+<text class="sub" x="578" y="145">plate WARPED to the pose,</text>
+<text class="sub" x="578" y="160">not redrawn</text>
+<text class="sub" x="578" y="179">edge work, contact shadow,</text>
+<text class="sub" x="578" y="194">occlusion at the pockets</text>
+
+<rect class="hand" x="562" y="224" width="196" height="86" rx="8"/>
+<text class="lbl" x="578" y="246">Manual retouch</text>
+<text class="sub" x="578" y="265">Photoshop, every frame</text>
+<text class="sub" x="578" y="282">hem fall, hardware, hair,</text>
+<text class="sub" x="578" y="297">set-level colour match</text>
+<path class="ln" d="M660 208 L660 222"/>
+<path class="ln" d="M758 266 L794 266"/>
+
+<text class="col" x="802" y="92">GATE</text>
+<rect class="gate" x="802" y="104" width="150" height="206" rx="8"/>
+<text class="lbl" x="818" y="126">Spec check</text>
+<text class="sub mono" x="818" y="146">2400 x 3600</text>
+<text class="sub mono" x="818" y="163">ratio 0.6667</text>
+<text class="sub mono" x="818" y="180">warmth 16-29</text>
+<text class="sub mono" x="818" y="197">spread &gt;= 4</text>
+<text class="sub mono" x="818" y="214">height &gt;= 95%</text>
+<text class="sub mono" x="818" y="231">offset -14 to -3%</text>
+<text class="sub mono" x="818" y="248">naming BER...</text>
+<text class="sub" x="818" y="272">a frame that fails</text>
+<text class="sub" x="818" y="287">goes back, it does</text>
+<text class="sub" x="818" y="302">not ship</text>
+
+<rect class="no" x="28" y="336" width="462" height="110" rx="8"/>
+<text class="lbl" x="46" y="360">What this rules out, deliberately</text>
+<text class="sub" x="46" y="382">Prompting the garment. LoRAs trained on the garment. Reference-weighted</text>
+<text class="sub" x="46" y="399">image-to-image of the garment. Every one of those makes reinterpretation</text>
+<text class="sub" x="46" y="416">LESS LIKELY. You asked for it not to happen, which is a different promise.</text>
+<text class="sub mono" x="46" y="436">"We do not want AI reinterpreting the garment." Your brief.</text>
+
+<rect class="box" x="506" y="336" width="446" height="110" rx="8"/>
+<text class="lbl" x="524" y="360">And what it costs, stated plainly</text>
+<text class="sub" x="524" y="382">Pose range is bounded by your source photography. A plate can be warped</text>
+<text class="sub" x="524" y="399">and relit across related poses; it cannot be turned ninety degrees. A back</text>
+<text class="sub" x="524" y="416">view needs a back-view source. Some frames will still need a camera.</text>
+<text class="sub mono" x="524" y="436">Your brief says supplement. That is the right word for what this does.</text>
+
+<text class="sub" x="28" y="476">Measured from 300 products and 1,685 catalogue images, 4 November 2026. Spec enforced by 05_spec_engine.js, 41 tests in 09_validation.js.</text>
+<text class="sub" x="28" y="498">Nothing in this package was generated. It is a study of your photography and the method that would match it.</text>
+</svg>
+
+<div style="margin-top:16px">
+<div class="card"><h3 style="margin-top:0">How models stay consistent</h3><ul>
+<li><b>Identity</b> from a locked reference set, never a text description</li>
+<li><b>Pose</b> from an approved library stored as pose maps, reused not re-prompted</li>
+<li><b>Light and background</b> plated to the measured spec</li>
+<li><b>Seeds, versions and parameters recorded per image</b>, so a frame can be
+regenerated a season later</li>
+</ul>
+<p class="note" style="margin:10px 0 0">That last one is what makes it a system. A model
+you cannot reproduce in March is not a Bernardo digital model; it is an image you liked
+once.</p></div>
+
+</div>
+
+<h3>Retouching</h3>
+<p class="note">Yes, every frame, by hand, in Photoshop. Garment edge at the composite,
+contact shadow, hem and cuff fall, hardware highlights, hair against the background, then
+a set-level colour pass so six frames match each other rather than individually matching
+a spec. Generated output is the middle of the process, not the end of it.</p>
+</section>
+
+<!-- ============ TEST ============ -->
+<section id="p4" role="tabpanel" aria-labelledby="t4" hidden>
+<h2>The test project</h2>
+<p class="note">You proposed one or two products. I would do <b>one, properly</b>, at six
+images, because six is where consistency actually gets tested. Any method produces one
+good frame.</p>
+
+<div class="card" style="padding:0"><div class="scroll"><table>
+<thead><tr><th>Stage</th><th class="n">First product</th><th class="n">Once the system exists</th></tr></thead>
+<tbody>
+<tr><td>Intake and garment plate preparation</td><td class="n">3 h</td><td class="n">1.5 h</td></tr>
+<tr><td>First view: model, scene, composite</td><td class="n">4 h</td><td class="n">1 h</td></tr>
+<tr><td>Five further views</td><td class="n">7.5 h</td><td class="n">3 h</td></tr>
+<tr><td>Manual retouch pass</td><td class="n">3 h</td><td class="n">2 h</td></tr>
+<tr><td>Spec check and corrections</td><td class="n">1 h</td><td class="n">0.5 h</td></tr>
+<tr class="hl"><td><b>Six images</b></td><td class="n"><b>18.5 h</b></td><td class="n"><b>8 h</b></td></tr>
+<tr><td>Calendar</td><td class="n">4–5 days</td><td class="n">1–2 days</td></tr>
+</tbody></table></div></div>
+
+<p class="note" style="margin-top:12px"><b>The drop is the whole argument.</b> The first
+product pays for casting the model, locking the light and writing the spec. Everything
+after reuses them. If the test works, the second product should cost about half, and that
+drop is the thing to judge rather than the first result.</p>
+
+<h3>What ships with the test</h3>
+<ul>
+<li>One SKU, <b>six final images</b> at 2400&times;3600, named to your convention</li>
+<li><b>Side by side with your existing shots of the same SKU</b>, so the comparison is
+honest and immediate</li>
+<li>The written spec, extended with whatever the test teaches</li>
+<li>The checker, run on every delivered frame, output included</li>
+<li>A written note on <b>what the method could not do</b> and which frames still need a
+camera</li>
+</ul>
+
+<h3>What I would need</h3>
+<ul>
+<li>The SKU's full existing shot set at master resolution. The plates come from these.</li>
+<li>Flat or mannequin shots if they exist. Better plates than on-body.</li>
+<li>Two or three retouched masters, so retouching standards are matched rather than
+guessed.</li>
+<li><b>Which aspect standard this SKU ships to.</b></li>
+</ul>
+
+<footer>Measured from bernardofashions.com on 4 November 2026: 300 products, 1,685 images
+via the public catalogue, plus five master frames inspected directly. Spec enforced by a
+41-test checker. No account, no scraping behind authentication, and nothing in this study
+was generated.</footer>
+</section>
+</div>
+
+<script>
+(function(){
+"use strict";
+var tabs=[].slice.call(document.querySelectorAll('nav [role=tab]'));
+function show(id){tabs.forEach(function(t){var s=t.id===id;
+ t.setAttribute('aria-selected',s?'true':'false');
+ document.getElementById(t.getAttribute('aria-controls')).hidden=!s;});}
+tabs.forEach(function(t){t.addEventListener('click',function(){show(t.id);});});
+var root=document.documentElement,tg=document.getElementById('theme');
+function cur(){var a=root.getAttribute('data-theme');
+ return a||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');}
+function paint(){tg.textContent=cur()==='dark'?'light':'dark';}
+tg.addEventListener('click',function(){root.setAttribute('data-theme',cur()==='dark'?'light':'dark');paint();});
+paint();
+
+/* background warmth checker, same rule as 05_spec_engine.js */
+var WARM={min:16,max:29}, LIGHT={min:196,max:246};
+function hex2rgb(h){var m=/^#?([0-9a-f]{6})$/i.exec(h.trim());if(!m)return null;
+ var n=parseInt(m[1],16);return [(n>>16)&255,(n>>8)&255,n&255];}
+function judge(){
+ var h=document.getElementById('hexin').value;
+ var rgb=hex2rgb(h);
+ var v=document.getElementById('bgv'), rb=document.getElementById('rb');
+ if(!rgb){ rb.textContent=''; v.className='verdict v-bad';
+   v.textContent='Not a six-digit hex.'; return; }
+ document.getElementById('pick').value='#'+rgb.map(function(x){
+   return x.toString(16).padStart(2,'0');}).join('');
+ var warmth=rgb[0]-rgb[2], light=rgb[0];
+ rb.textContent='R−B = '+warmth+'   ·   lightness '+light;
+ var warmOk=warmth>=WARM.min&&warmth<=WARM.max;
+ var lightOk=light>=LIGHT.min&&light<=LIGHT.max;
+ if(warmOk&&lightOk){ v.className='verdict v-ok';
+  v.innerHTML='<b>Inside the range your shoots occupy.</b> Warmth '+warmth+
+   ' sits in the 16–29 band, lightness '+light+' in 196–246. It would still need a '+
+   'falloff across the frame: a perfectly even field reads as composited.'; }
+ else if(!warmOk){ v.className='verdict v-bad';
+  v.innerHTML='<b>Not warm enough.</b> R−B is '+warmth+'. Your background runs <b>21 to 23</b> '+
+   'in every sample, in every shoot. A neutral grey is 0, and it is the most common way an '+
+   'AI background gives itself away.'; }
+ else { v.className='verdict v-bad';
+  v.innerHTML='<b>Right hue, wrong lightness.</b> Mean red is '+light+
+   '; your shoots sit between 208 and 237. Outside that it reads as a different studio day.'; }
+}
+document.getElementById('hexin').addEventListener('input',judge);
+document.getElementById('pick').addEventListener('input',function(){
+ document.getElementById('hexin').value=this.value; judge();});
+judge();
+})();
+</script>
+
+</body>
+</html>
